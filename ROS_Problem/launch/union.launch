@@ -1,0 +1,22 @@
+<launch>
+
+<node pkg = "topic_problem1" type = "topic_problem1_pub" name = "topic_problem1_pub"/>
+<node pkg = "topic_problem1" type = "topic_problem1_sub" name = "topic_problem1_sub"/>
+
+<node pkg = "topic_problem2" type = "topic_problem2_pub" name = "topic_problem2_pub"/>
+<node pkg = "topic_problem2" type = "topic_problem2_sub" name = "topic_problem2_sub"/>
+
+<node pkg = "service_problem1" type = "service_problem1_server" name = "service_problem1_server"/>
+<node pkg = "service_problem1" type = "service_problem1_client" name = "service_problem1_client"/>
+
+<node pkg = "service_problem2" type = "service_problem2_server" name = "service_problem2_server"/>
+<node pkg = "service_problem2" type = "service_problem2_client" name = "service_problem2_client"/>
+
+<node pkg = "param_problem1" type = "param_problem1_pub" name = "param_problem1_pub"/>
+</node>
+
+<rosparam name = "frequancy" value = "10"/>
+
+<node pkg = "param_problem1" type = "param_problem1_sub" name = "param_problem1_sub"/>
+
+</launch>
